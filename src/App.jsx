@@ -15,7 +15,7 @@ const pages = {
 }
 
 function App() {
-  const [currentPage, setCurrentPage] = useState("");
+  const [currentPage, setCurrentPage] = useState("Home");
 
   return (
     <>

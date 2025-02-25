@@ -8,7 +8,7 @@ const Hero = () => {
                     </div>
             
                     <div className="w-full mx-5 md:w-1/2">
-                        <h1 className="text-4xl md:text-7xl font-bold text-white">Hi, I'm  
+                        <h1 className="text-4xl md:text-7xl font-bold text-white">Hi, I`m  
                             <span className="text-blue-400"> Faza Ihza Rosyada</span>
                         </h1>
                         <p className="mt-4 text-xl md:text-3xl text-transparent bg-clip-text bg-gradient-to-r from-blue-500 via-slate-300 to-blue-500">AI & Web development enthusiast</p>

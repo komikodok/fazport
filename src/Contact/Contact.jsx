@@ -1,4 +1,7 @@
 const Contact = () => {
+    const handleSubmit = () => {
+        //
+    };
     return (
         // <!-- Contact section -->
         <section className="bg-gradient-to-b from-gray-950 via-gray-900 to-gray-950 py-20">
@@ -12,40 +15,40 @@ const Contact = () => {
                         <div className="text-3xl flex p-4">
                             <strong className="mr-auto text-transparent bg-clip-text bg-gradient-to-r from-blue-400 via-slate-300 to-blue-500">Let’s make collaborations!</strong>
                         </div>
-                        <form className="grid grid-cols-2 gap-2" method="post" action="{% url 'home:contact_me' %}">
+                        <form className="grid grid-cols-2 gap-2" onSubmit={handleSubmit}>
                                 {/* <!-- First Name --> */}
                                 <div className="flex flex-col mx-3 my-2 gap-2">
                                     <label htmlFor="first_name" className="block text-sm font-medium text-gray-700">First Name</label>
                                     <input type="text" name="first_name" id="first_name" 
-                                            className="text-slate-200 w-full mx-auto p-2 outline-none bg-zinc-950 rounded-md focus:border-slate-300 focus:ring-2 text-sm" 
+                                            className="text-slate-200 w-full mx-auto p-2 outline-none font-semibold bg-zinc-950 rounded-md focus:border-slate-300 focus:ring-2 text-sm" 
                                             placeholder="Enter your first name..." />
                                 </div>
                                 {/* <!-- Last Name --> */}
                                 <div className="flex flex-col mx-3 my-2 gap-2">
                                     <label htmlFor="last_name" className="block text-sm font-medium text-gray-700">Last Name</label>
                                     <input type="text" name="last_name" id="last_name" 
-                                            className="text-slate-200 w-full mx-auto p-2 outline-none bg-zinc-950 rounded-md focus:border-slate-300 focus:ring-2 text-sm" 
+                                            className="text-slate-200 w-full mx-auto p-2 outline-none font-semibold bg-zinc-950 rounded-md focus:border-slate-300 focus:ring-2 text-sm" 
                                             placeholder="Enter your last name..." />
                                 </div>
                                 {/* <!-- Email --> */}
                                 <div className="flex flex-col mx-3 my-2 gap-2">
                                     <label htmlFor="email" className="block text-sm font-medium text-gray-700">Email</label>
                                     <input type="email" name="email" id="email" 
-                                            className="text-slate-200 w-full mx-auto p-2 outline-none bg-zinc-950 rounded-md focus:border-slate-300 focus:ring-2 text-sm" 
+                                            className="text-slate-200 w-full mx-auto p-2 outline-none font-semibold bg-zinc-950 rounded-md focus:border-slate-300 focus:ring-2 text-sm" 
                                             placeholder="Enter your email address..." />
                                 </div>
                                 {/* <!-- Phone Number --> */}
                                 <div className="flex flex-col mx-3 my-2 gap-2">
                                     <label htmlFor="phone_number" className="block text-sm font-medium text-gray-700">Phone Number</label>
                                     <input type="text" name="phone_number" id="phone_number" 
-                                            className="text-slate-200 w-full mx-auto p-2 outline-none bg-zinc-950 rounded-md focus:border-slate-300 focus:ring-2 text-sm" 
+                                            className="text-slate-200 w-full mx-auto p-2 outline-none font-semibold bg-zinc-950 rounded-md focus:border-slate-300 focus:ring-2 text-sm" 
                                             placeholder="Phone Number..." />
                                 </div>
                                 {/* <!-- Message --> */}
                                 <div className="flex flex-col mx-3 col-span-2 gap-2">
                                     <label htmlFor="message" className="block text-sm font-medium text-gray-700">Message</label>
                                     <textarea name="message" id="message" 
-                                                className="text-slate-200 bg-zinc-950 rounded-md p-2 outline-none resize-none focus:border-slate-300 focus:ring-2 text-sm w-full h-52 col-span-2" 
+                                                className="text-slate-200 bg-zinc-950 rounded-md p-2 outline-none font-semibold resize-none focus:border-slate-300 focus:ring-2 text-sm w-full h-52 col-span-2" 
                                                 placeholder="Message..."></textarea>
                                 </div>
                             {/* <!-- Submit Button --> */}
