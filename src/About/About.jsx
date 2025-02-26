@@ -2,7 +2,6 @@ import { useEffect, useState } from "react"
 
 const About = () => {
     const [projectData, setProjectData] = useState([]);
-    console.log("About");
     useEffect(() => {
         axios.get("http://localhost:8000/api/projects")
             .then((response) => {
@@ -30,10 +29,11 @@ const About = () => {
                             <strong className="text-blue-400"> Langchain</strong>, <strong className="text-blue-400">FastAPI</strong>, and <strong className="text-blue-400">Laravel</strong>&rdquo;.
                         </p>
                         <ul className="text-blue-300 list-disc list-inside px-5 py-2">
-                            <li className="">test.com</li>
-                            <li className="">+62 85123456789</li>
+                            <li className="">komikodok.github.io/fazport</li>
+                            <li className="">https://github.com/komikodok</li>
+                            <li className="">+62 85974850272</li>
                             <li className="">Pekalongan, Indonesia</li>
-                            <li className="">test@gmail.com</li>
+                            <li className="">fazaihzarosyada@gmail.com</li>
                         </ul>
                     </div>
                     {/* <!-- Project Box --> */}

@@ -1,10 +1,10 @@
 const Hero = () => {
     return (
-        <section id="hero" className="bg-gradient-to-b from-gray-950 via-slate-950 to-slate-900 py-20">
+        <section className="bg-gradient-to-b from-gray-950 via-slate-950 to-slate-900 py-20">
             <div className="max-w-7xl mx-auto flex flex-col items-center text-center py-20">
                 <div className="flex flex-row-reverse max-md:flex-col w-[95%] my-10 p-4 justify-center items-center">
                     <div className="mb-8 mx-auto bg-contain">
-                        <img src="" className="w-52 md:w-64 h-60 md:h-72 mx-auto rounded-xl border-4 border-blue-400" />
+                        <img src={null} className="w-52 md:w-64 h-60 md:h-72 mx-auto rounded-xl border-4 border-blue-400" />
                     </div>
             
                     <div className="w-full mx-5 md:w-1/2">

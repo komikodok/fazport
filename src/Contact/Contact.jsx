@@ -60,14 +60,17 @@ const Contact = () => {
                     {/* <!-- My Contact --> */}
                     <div className="flex flex-col w-[90%] h-52 md:h-full max-md:my-16 justify-center items-center mx-auto">
                         <div className="">
-                            <h2 className="font-bold text-2xl sm:text-lg lg:text-2xl m-8 bg-clip-text text-transparent bg-gradient-to-r from-blue-300 via-slate-300 to-blue-300"><i className="devicon-google-plain"></i> test@gmail.com</h2>
                             <h2 className="font-bold text-2xl sm:text-lg lg:text-2xl m-8 bg-clip-text text-transparent bg-gradient-to-r from-blue-300 via-slate-300 to-blue-300">
-                                <i className="fab fa-whatsapp"></i>
+                                <i className="devicon-google-plain m-2"></i>
+                                test@gmail.com
+                            </h2>
+                            <h2 className="font-bold text-2xl sm:text-lg lg:text-2xl m-8 bg-clip-text text-transparent bg-gradient-to-r from-blue-300 via-slate-300 to-blue-300">
+                                <i className="fab fa-whatsapp m-2"></i>
                                 +62 85123456789
                             </h2>
                             <h2 className="font-bold text-2xl sm:text-lg lg:text-2xl m-8 bg-clip-text text-transparent bg-gradient-to-r from-blue-300 via-slate-300 to-blue-300">
-                                <i className="fab fa-github"></i>
-                                http://github.com/komikodok
+                                <i className="fab fa-github m-2"></i>
+                                https://github.com/komikodok
                             </h2>
                         </div>
                     </div>

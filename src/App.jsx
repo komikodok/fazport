@@ -5,6 +5,7 @@ import Home from './Home/Home'
 import About from './About/About'
 import Project from './Project/Project'
 import Contact from './Contact/Contact'
+import Assistant from './Assistant/Assistant'
 import './style.css'
 
 const pages = {
@@ -23,6 +24,7 @@ function App() {
      <Body>
       {pages[currentPage]}
      </Body>
+     <Assistant></Assistant>
     </>
   )
 }
