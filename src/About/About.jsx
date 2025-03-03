@@ -11,7 +11,6 @@ const About = () => {
     }, []);
 
     return (
-        // <!-- Contact section -->
         <section className="bg-gradient-to-b from-gray-950 via-gray-900 to-gray-950 py-20">
             <div className="mx-auto px-4">
                 <h2 className="text-4xl font-extrabold text-white text-center mb-12">
@@ -33,7 +32,7 @@ const About = () => {
                             <li className="">https://github.com/komikodok</li>
                             <li className="">+62 85974850272</li>
                             <li className="">Pekalongan, Indonesia</li>
-                            <li className="">fazaihzarosyada@gmail.com</li>
+                            <li className="">adm.fazport@gmail.com</li>
                         </ul>
                     </div>
                     {/* <!-- Project Box --> */}
