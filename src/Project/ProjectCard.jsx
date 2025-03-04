@@ -22,7 +22,7 @@ const ProjectCard = ({projectData, setProjectSlug}) => {
                 <span className="text-white text-3xl transform transition-transform duration-500 ease-in-out group-hover:rotate-180">📋</span>
             </button>
 
-            <div className={`fixed bottom-0 left-1/2 w-[480px] transition-transform -translate-x-1/2 ${openProjectCard ? "translate-y-0" : "translate-y-full"} md:mt-3 lg:mt-8 transition-all duration-700 ease-out md:pb-4`}>
+            <div className={`fixed bottom-0 left-1/2 w-[480px] transition-transform -translate-x-1/2 ${openProjectCard ? "translate-y-0" : "translate-y-100"} md:mt-3 lg:mt-8 transition-all duration-700 ease-out md:pb-4`}>
 
                 <button onClick={() => setOpenProjectCard(false)} className="absolute cursor-pointer w-7 -right-2 -top-2 rounded z-10 hover:scale-90 transition-all duration-500">❌</button>
                 <button onClick={scrollLeft} className="absolute cursor-pointer left-0 top-1/2 transform -translate-y-1/2 bg-gray-700 hover:bg-gray-800 text-white p-2 rounded z-10">‹</button>
