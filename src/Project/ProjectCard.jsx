@@ -7,13 +7,13 @@ const ProjectCard = ({projectData, setProjectSlug}) => {
 
     const scrollLeft = () => {
         if (sliderRef.current) {
-            sliderRef.current.scrollBy({ left: -300, behavior: "smooth" }); // Geser ke kiri
+            sliderRef.current.scrollBy({ left: -300, behavior: "smooth" });
         }
     };
 
     const scrollRight = () => {
         if (sliderRef.current) {
-            sliderRef.current.scrollBy({ left: 300, behavior: "smooth" }); // Geser ke kanan
+            sliderRef.current.scrollBy({ left: 300, behavior: "smooth" });
         }
     };
     return (
