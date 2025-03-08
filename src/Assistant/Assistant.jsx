@@ -82,7 +82,12 @@ const Assistant = () => {
                         <strong className="m-auto text-xl text-slate-200">Assistant</strong>
                     </div>
                     <div className="flex w-full h-full">
-                        <img src={data.image_url} className={`${showAssistant ? "translate-y-1 opacity-100" : "translate-y-full opacity-0"} transition-all duration-300`} alt="image" />
+                        <img 
+                            src={data.image_url} 
+                            className={`${showAssistant ? "translate-y-2 opacity-100" : "translate-y-full opacity-0"} pointer-events-none transition-all duration-300`} 
+                            alt="" 
+                            onContextMenu={(e) => e.preventDefault()}
+                            draggable="false" />
                         <div className="flex text-center p-4 w-full h-full bg-gradient-to-r from-transparent via-cyan-950 to-transparent rounded-r-xl">
                             <p className="w-full h-full text-sky-100 font-bold break-words break-all overflow-y-scroll" style={{ scrollbarWidth: "none" }}>
                                 {data.generation}

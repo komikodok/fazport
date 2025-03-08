@@ -11,6 +11,7 @@ const Contact = () => {
         message: "",
     });
     const [token, setToken] = useState("");
+    const [errors, setErrors] = useState({});
 
     useEffect(() => {
         axios.get(`${BASE_URL}/csrf-token`, {withCredentials: true})
@@ -35,7 +36,13 @@ const Contact = () => {
             }
         )
             .then((response) => console.log(response.data))
-            .catch((error) => console.error(error.message))
+            .catch((error) => {
+                if (error.response.data) {
+                    setErrors(error.response.data.error)
+                } else {
+                    console.error(error.message)
+                }
+            })
 
         setFormData({
             first_name: "",
@@ -67,6 +74,14 @@ const Contact = () => {
                                         onChange={handleChange}
                                         value={formData.first_name}
                                 />
+                                {errors.first_name && errors.first_name.map((error, index) => (
+                                    <span 
+                                        key={index}
+                                        className="text-gray-400 text-sm font-semibold flex justify-start px-2"
+                                    >
+                                        {"!" + error}
+                                    </span>
+                                ))}
                             </div>
                             {/* <!-- Last Name --> */}
                             <div className="flex flex-col mx-3 my-2 gap-2">
@@ -77,6 +92,14 @@ const Contact = () => {
                                         onChange={handleChange}
                                         value={formData.last_name}
                                 />
+                                {errors.last_name && errors.last_name.map((error, index) => (
+                                    <span 
+                                        key={index}
+                                        className="text-gray-400 text-sm font-semibold flex justify-start px-2"
+                                    >
+                                        {"!" + error}
+                                    </span>
+                                ))}
                             </div>
                             {/* <!-- Email --> */}
                             <div className="flex flex-col mx-3 my-2 gap-2">
@@ -87,6 +110,14 @@ const Contact = () => {
                                         onChange={handleChange}
                                         value={formData.email}
                                 />
+                                {errors.email && errors.email.map((error, index) => (
+                                    <span 
+                                        key={index}
+                                        className="text-gray-400 text-sm font-semibold flex justify-start px-2"
+                                    >
+                                        {"!" + error}
+                                    </span>
+                                ))}
                             </div>
                             {/* <!-- Phone Number --> */}
                             <div className="flex flex-col mx-3 my-2 gap-2">
@@ -97,6 +128,14 @@ const Contact = () => {
                                         onChange={handleChange}
                                         value={formData.phone_number}
                                 />
+                                {errors.phone_number && errors.phone_number.map((error, index) => (
+                                    <span 
+                                        key={index}
+                                        className="text-gray-400 text-sm font-semibold flex justify-start px-2"
+                                    >
+                                        {"!" + error}
+                                    </span>
+                                ))}
                             </div>
                             {/* <!-- Message --> */}
                             <div className="flex flex-col mx-3 col-span-2 gap-2">
@@ -108,6 +147,14 @@ const Contact = () => {
                                             value={formData.message}
                                 >
                                 </textarea>
+                                {errors.message && errors.message.map((error, index) => (
+                                    <span 
+                                        key={index}
+                                        className="text-gray-400 text-sm font-semibold flex justify-start px-2"
+                                    >
+                                        {"!" + error}
+                                    </span>
+                                ))}
                             </div>
                             <button className="group bg-gradient-to-r from-slate-400 via-slate-400 to-slate-500 hover:from-slate-500 hover:via-slate-400 hover:to-slate-400 rounded-3xl flex w-[90%] h-12 m-4" type="submit">
                                 <strong className="text-gray-800 group-hover:text-gray-950 text-lg fond-bold m-auto">Send Message</strong>
@@ -123,7 +170,7 @@ const Contact = () => {
                             </strong>
                             <strong className="font-bold text-2xl sm:text-lg lg:text-2xl m-4 bg-clip-text text-transparent bg-gradient-to-r from-blue-300 via-slate-300 to-blue-300">
                                 <i className="fab fa-whatsapp m-2"></i>
-                                +62 85123456789
+                                +62 85974850272
                             </strong>
                             <strong className="font-bold text-2xl sm:text-lg lg:text-2xl m-4 bg-clip-text text-transparent bg-gradient-to-r from-blue-300 via-slate-300 to-blue-300">
                                 <i className="fab fa-github m-2"></i>

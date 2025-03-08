@@ -21,7 +21,9 @@ const AssistantButton = ({handleClick, openAssistant}) => {
                 src={`${mouseOver ? moodHappy?.image_url : moodNormal?.image_url}`}
                 onClick={handleClick}
                 onMouseOver={() => setMouseOver(true)} 
-                onMouseLeave={() => setMouseOver(false)} 
+                onMouseLeave={() => setMouseOver(false)}
+                onContextMenu={(e) => e.preventDefault()}
+                draggable="false"
             />
         </button>
     )

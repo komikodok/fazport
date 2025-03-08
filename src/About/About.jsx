@@ -29,7 +29,9 @@ const About = () => {
                         </p>
                         <ul className="text-blue-300 list-disc list-inside px-5 py-2">
                             <li className="">komikodok.github.io/fazport</li>
-                            <li className="">https://github.com/komikodok</li>
+                            <li className="">
+                                <a href="https://github.com/komikodok">https://github.com/komikodok</a>
+                            </li>
                             <li className="">+62 85974850272</li>
                             <li className="">Pekalongan, Indonesia</li>
                             <li className="">adm.fazport@gmail.com</li>
