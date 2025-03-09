@@ -18,7 +18,7 @@ const ProjectCard = ({projectData, setProjectSlug}) => {
     };
     return (
         <>
-            <button onClick={() => setOpenProjectCard(true)} className={`${openProjectCard && "opacity-0"} cursor-pointer flex fixed justify-center items-center shadow-2xl shadow-gray-950 bottom-0 right-20 translate-x-10 w-12 h-12 rounded-full mb-10 transition-transform duration-300 hover:scale-110 hover:rotate-45 active:rotate-180`}>
+            <button onClick={() => setOpenProjectCard(true)} className={`${openProjectCard && "opacity-0"} cursor-pointer flex fixed justify-center items-center shadow-2xl shadow-gray-950 bottom-0 right-20 translate-x-10 w-12 h-12 rounded-full mb-10 transition-transform duration-300 hover:scale-110 hover:rotate-45 active:scale-130`}>
                 <span className="text-white text-3xl transform transition-transform duration-500 ease-in-out group-hover:rotate-180">📋</span>
             </button>
 

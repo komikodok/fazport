@@ -79,7 +79,7 @@ const Contact = () => {
                                         key={index}
                                         className="text-gray-400 text-sm font-semibold flex justify-start px-2"
                                     >
-                                        {"!" + error}
+                                        {"▹" + error}
                                     </span>
                                 ))}
                             </div>
@@ -97,7 +97,7 @@ const Contact = () => {
                                         key={index}
                                         className="text-gray-400 text-sm font-semibold flex justify-start px-2"
                                     >
-                                        {"!" + error}
+                                        {"▹" + error}
                                     </span>
                                 ))}
                             </div>
@@ -115,7 +115,7 @@ const Contact = () => {
                                         key={index}
                                         className="text-gray-400 text-sm font-semibold flex justify-start px-2"
                                     >
-                                        {"!" + error}
+                                        {"▹" + error}
                                     </span>
                                 ))}
                             </div>
@@ -133,7 +133,7 @@ const Contact = () => {
                                         key={index}
                                         className="text-gray-400 text-sm font-semibold flex justify-start px-2"
                                     >
-                                        {"!" + error}
+                                        {"▹" + error}
                                     </span>
                                 ))}
                             </div>
@@ -152,7 +152,7 @@ const Contact = () => {
                                         key={index}
                                         className="text-gray-400 text-sm font-semibold flex justify-start px-2"
                                     >
-                                        {"!" + error}
+                                        {"▹" + error}
                                     </span>
                                 ))}
                             </div>

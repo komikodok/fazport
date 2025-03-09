@@ -28,8 +28,10 @@ const About = () => {
                             <strong className="text-blue-400"> Langchain</strong>, <strong className="text-blue-400">FastAPI</strong>, and <strong className="text-blue-400">Laravel</strong>&rdquo;.
                         </p>
                         <ul className="text-blue-300 list-disc list-inside px-5 py-2">
-                            <li className="">komikodok.github.io/fazport</li>
-                            <li className="">
+                            <li className="hover:underline cursor-pointer">https://komikodok.github.io/fazport
+                                <a href="https://komikodok.github.io/fazport"></a>
+                            </li>
+                            <li className="hover:underline cursor-pointer">
                                 <a href="https://github.com/komikodok">https://github.com/komikodok</a>
                             </li>
                             <li className="">+62 85974850272</li>

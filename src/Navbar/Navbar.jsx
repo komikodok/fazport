@@ -6,7 +6,7 @@ const Navbar = ({currentPage, setCurrentPage}) => {
     const [mobileMenu, setMobileMenu] = useState(false);
 
     return (
-        <nav id="navbar" className="bg-slate-900 w-full fixed shadow-md shadow-slate-950 rounded-xl" data-home-url="#">
+        <nav id="navbar" className="bg-slate-900 w-full fixed shadow-md shadow-slate-950 rounded-xl z-50" data-home-url="#">
             <div className="max-w-6xl mx-auto px-4">
                 <div className="flex justify-between items-center">
                     <div className="flex items-center space-x-2">
