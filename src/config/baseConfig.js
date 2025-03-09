@@ -1,3 +1,3 @@
-const BASE_URL = "http://localhost:8000"
+const BASE_URL = 'https://fazport.up.railway.app'
 
 export default BASE_URL
