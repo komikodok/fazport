@@ -4,6 +4,8 @@ import AssistantButton from "./AssistantButton";
 
 const API_BASE_URL = import.meta.env.VITE_API_BASE_URL;
 const BASE_URL = import.meta.env.VITE_BASE_URL;
+console.log(`API URL(from assistant ): ${API_BASE_URL}`)
+console.log(`URL(from assistant ): ${BASE_URL}`)
 
 const Assistant = () => {
     const [openAssistant, setOpenAssistant] = useState(false);
