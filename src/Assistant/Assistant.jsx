@@ -1,7 +1,9 @@
 import { useEffect, useState } from "react";
+import axios from "axios";
 import AssistantButton from "./AssistantButton";
-import API_BASE_URL from "../config/apiConfig";
-import BASE_URL from "../config/baseConfig";
+
+const API_BASE_URL = import.meta.env.VITE_API_BASE_URL;
+const BASE_URL = import.meta.env.VITE_BASE_URL;
 
 const Assistant = () => {
     const [openAssistant, setOpenAssistant] = useState(false);
@@ -58,7 +60,7 @@ const Assistant = () => {
             <AssistantButton handleClick={handleClick} openAssistant={openAssistant} />
 
             <div className={`fixed inset-0 ${!openAssistant && "hidden"} w-full h-full opacity-60 bg-black`}></div>
-            <div className={`fixed bottom-0 right-1/2 ${openAssistant ? "translate-y-0" : "translate-y-full"} translate-x-1/2 w-full md:w-[90%] lg:w-[70%] h-[80%] transition-all duration-75 bg-gradient-to-b from-transparent to-slate-950`}>
+            <div className={`fixed bottom-0 right-1/2 ${openAssistant ? "translate-y-0" : "translate-y-full"} translate-x-1/2 w-full md:w-[90%] lg:w-[70%] h-[80%] max-sm:h-[50%] transition-all duration-75 bg-gradient-to-b from-transparent to-slate-950`}>
                 <button type="button" onClick={clearMessageHistory} className="absolute right-0 cursor-pointer rounded-full p-2 hover:rotate-90 transition-transform">❌</button>
                 <form onSubmit={handleSubmit} className="absolute flex p-1 justify-end right-0 top-10 w-[60%] h-[40%]">
                     <button

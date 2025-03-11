@@ -1,6 +1,8 @@
 import { useEffect, useState } from "react";
-import API_BASE_URL from "../config/apiConfig";
-import BASE_URL from "../config/baseConfig";
+import axios from "axios";
+
+const API_BASE_URL = import.meta.env.VITE_API_BASE_URL;
+const BASE_URL = import.meta.env.VITE_BASE_URL;
 
 const Contact = () => {
     const [formData, setFormData] = useState({
@@ -55,7 +57,7 @@ const Contact = () => {
 
     return (
         <section className="bg-gradient-to-b from-gray-950 via-gray-900 to-gray-950 py-20">
-            <div className="mx-auto px-4">
+            <div className="mx-auto md:px-4">
                 <h2 className="text-4xl font-extrabold text-white text-center mb-12">
                     Contact <span className="text-blue-400">Me</span>
                 </h2>
@@ -157,22 +159,22 @@ const Contact = () => {
                                 ))}
                             </div>
                             <button className="group bg-gradient-to-r from-slate-400 via-slate-400 to-slate-500 hover:from-slate-500 hover:via-slate-400 hover:to-slate-400 rounded-3xl flex w-[90%] h-12 m-4" type="submit">
-                                <strong className="text-gray-800 group-hover:text-gray-950 text-lg fond-bold m-auto">Send Message</strong>
+                                <strong className="text-gray-800 group-hover:text-gray-950 text-md lg:text-lg fond-bold m-auto">Send Message</strong>
                             </button>
                         </form>
                     </div>
                     {/* <!-- My Contact --> */}
                     <div className="flex flex-col w-[90%] h-52 md:h-full max-md:my-16 justify-center items-center mx-auto">
                         <div className="flex flex-col">
-                            <strong className="font-bold text-2xl sm:text-lg lg:text-2xl m-4 bg-clip-text text-transparent bg-gradient-to-r from-blue-300 via-slate-300 to-blue-300">
+                            <strong className="font-bold text-xl md:text-lg lg:text-2xl m-4 bg-clip-text text-transparent bg-gradient-to-r from-blue-300 via-slate-300 to-blue-300">
                                 <i className="devicon-google-plain m-2"></i>
                                 adm.fazport@gmail.com
                             </strong>
-                            <strong className="font-bold text-2xl sm:text-lg lg:text-2xl m-4 bg-clip-text text-transparent bg-gradient-to-r from-blue-300 via-slate-300 to-blue-300">
+                            <strong className="font-bold text-xl md:text-lg lg:text-2xl m-4 bg-clip-text text-transparent bg-gradient-to-r from-blue-300 via-slate-300 to-blue-300">
                                 <i className="fab fa-whatsapp m-2"></i>
                                 +62 85974850272
                             </strong>
-                            <strong className="font-bold text-2xl sm:text-lg lg:text-2xl m-4 bg-clip-text text-transparent bg-gradient-to-r from-blue-300 via-slate-300 to-blue-300">
+                            <strong className="font-bold text-xl md:text-lg lg:text-2xl m-4 bg-clip-text text-transparent bg-gradient-to-r from-blue-300 via-slate-300 to-blue-300">
                                 <i className="fab fa-github m-2"></i>
                                 https://github.com/komikodok
                             </strong>
