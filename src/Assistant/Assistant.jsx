@@ -60,7 +60,7 @@ const Assistant = () => {
             <AssistantButton handleClick={handleClick} openAssistant={openAssistant} />
 
             <div className={`fixed inset-0 ${!openAssistant && "hidden"} w-full h-full opacity-60 bg-black`}></div>
-            <div className={`fixed bottom-0 right-1/2 ${openAssistant ? "translate-y-0" : "translate-y-full"} translate-x-1/2 w-full md:w-[90%] lg:w-[70%] h-[80%] max-md:h-[50%] transition-all duration-75 bg-gradient-to-b from-transparent to-slate-950`}>
+            <div className={`fixed bottom-0 right-1/2 ${openAssistant ? "translate-y-0" : "translate-y-full"} translate-x-1/2 w-full md:w-[90%] lg:w-[70%] h-[50%] transition-all duration-75 bg-gradient-to-b from-transparent to-slate-950`}>
                 <button type="button" onClick={clearMessageHistory} className="absolute right-0 cursor-pointer rounded-full p-2 hover:rotate-90 transition-transform">❌</button>
                 <form onSubmit={handleSubmit} className="absolute flex p-1 justify-end right-0 top-10 w-[60%] h-[40%]">
                     <button
@@ -81,7 +81,7 @@ const Assistant = () => {
                 </form>
                 <div className="absolute bottom-0 w-full h-[40%] border-3 border-cyan-700 p-0.5 bg-gray-950 rounded-xl">
                     <div className="absolute flex -top-[22%] right-[2%] bg-gradient-to-r via-cyan-800 w-[30%] h-[22%]">
-                        <strong className="m-auto text-xl max-md:text-sm text-slate-200">Assistant</strong>
+                        <strong className="m-auto text-sm text-slate-200">Assistant</strong>
                     </div>
                     <div className="flex w-full h-full">
                         <img 
@@ -91,7 +91,7 @@ const Assistant = () => {
                             onContextMenu={(e) => e.preventDefault()}
                             draggable="false" />
                         <div className="flex text-center p-4 w-full h-full bg-gradient-to-r from-transparent via-cyan-950 to-transparent rounded-r-xl">
-                            <p className="w-full h-full text-sky-100 max-md:text-xs font-bold break-words break-all overflow-y-scroll" style={{ scrollbarWidth: "none" }}>
+                            <p className="w-full h-full text-sky-100 text-xs font-bold break-words break-all overflow-y-scroll" style={{ scrollbarWidth: "none" }}>
                                 {data.generation}
                             </p>
                         </div>
