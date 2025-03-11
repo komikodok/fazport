@@ -20,8 +20,15 @@ jobs:
         run: |
           echo "VITE_API_BASE_URL=${{ secrets.VITE_API_BASE_URL }}" >> .env
           echo "VITE_BASE_URL=${{ secrets.VITE_BASE_URL }}" >> .env
+        shell: bash
+
+      - name: Verify .env Contents
+        run: cat .env
 
       - name: Build Project
+        env:
+          VITE_API_BASE_URL: ${{ secrets.VITE_API_BASE_URL }}
+          VITE_BASE_URL: ${{ secrets.VITE_BASE_URL }}
         run: npm run build
 
       - name: Deploy to GitHub Pages
