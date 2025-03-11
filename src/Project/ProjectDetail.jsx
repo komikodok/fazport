@@ -1,7 +1,9 @@
 /* eslint-disable react/prop-types */
 import { useEffect, useState } from "react";
+import axios from "axios";
 import ProjectCard from "./ProjectCard";
-import API_BASE_URL from "../config/apiConfig"
+
+const API_BASE_URL = import.meta.env.VITE_API_BASE_URL;
 
 const ProjectDetail = ({projectData, projectSlug, setProjectSlug}) => {
     const [projectDetail, setProjectDetail] = useState({});
@@ -15,8 +17,8 @@ const ProjectDetail = ({projectData, projectSlug, setProjectSlug}) => {
     }, [projectSlug]);
 
     return (
-        <section className="bg-gradient-to-t from-slate-950 to-slate-900 py-15 p-3 w-full h-full pt-24 pb-60 md:pb-64">
-            <div className="border-x-4 border-y-2 border-gray-950 bg-gradient-to-r from-gray-900 to-gray-950 rounded-xl p-10 justify-self-center mx-10 shadow-2xl shadow-gray-950">
+        <section className="bg-gradient-to-t from-slate-950 to-slate-900 py-15 lg:p-3 w-full h-full pt-24 pb-60 md:pb-64">
+            <div className="border-x-4 border-y-2 border-gray-950 bg-gradient-to-r from-gray-900 to-gray-950 rounded-xl max-sm:p-8 p-10 justify-self-center mx-10 shadow-2xl shadow-gray-950">
                 <h1 className="text-center text-slate-200 md:text-3xl text-2xl font-semibold -mx-5 mb-7">
                     <span className="underline">{projectDetail.title}</span>
                 </h1>

@@ -1,9 +1,12 @@
 import { useEffect, useState } from "react"
+import axios from "axios";
+
+const API_BASE_URL = import.meta.env.VITE_API_BASE_URL;
 
 const About = () => {
     const [projectData, setProjectData] = useState([]);
     useEffect(() => {
-        axios.get("http://localhost:8000/api/projects")
+        axios.get(`${API_BASE_URL}/projects`)
             .then((response) => {
                 setProjectData(response.data.slice(0, 2));
             })
