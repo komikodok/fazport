@@ -15,8 +15,11 @@ const pages = {
   Contact: <Contact />,
 }
 
+const API_BASE_URL = import.meta.env.VITE_API_BASE_URL;
+
 function App() {
   const [currentPage, setCurrentPage] = useState("Home");
+  console.log(`URL form Project: ${API_BASE_URL}`)
 
   return (
     <>
