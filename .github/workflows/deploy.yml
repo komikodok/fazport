@@ -34,3 +34,4 @@ jobs:
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git remote set-url origin https://x-access-token:${{ secrets.GH_TOKEN }}@github.com/komikodok/fazport.git
           git push origin gh-pages
+          
