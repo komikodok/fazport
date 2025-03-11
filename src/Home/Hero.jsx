@@ -19,11 +19,11 @@ const Hero = () => {
             <div className="max-w-7xl mx-auto flex flex-col items-center text-center py-20">
                 <div className="flex flex-row-reverse max-md:flex-col w-[95%] my-10 p-4 justify-center items-center">
                     <div className="group mb-10 border-4 border-slate-400 rounded-xl mx-auto h-64 md:h-72">
-                        <div className="h-64 md:h-72 mx-auto group-hover:scale-105 -rotate-10 group-hover:rotate-0 transition-all duration-300 rounded-xl border-4 border-blue-400 overflow-hidden">
-                            <div className="backdrop-blur-3xl blur-xs group-hover:blur-none">
+                        <div className="h-64 md:h-72 mx-auto group-hover:scale-105 group-focus:scale-105 -rotate-10 group-hover:rotate-0 group-focus:rotate-0 transition-all duration-300 rounded-xl border-4 border-blue-400 overflow-hidden">
+                            <div className="backdrop-blur-3xl blur-xs group-hover:blur-none group-focus:blur-none">
                                 <img 
                                     src={"b.png"} 
-                                    className="group-hover:scale-x-[1] scale-x-[-1] w-52 md:w-64 h-60 md:h-72 scale-120 transition-transform duration-900 object-cover mx-auto"
+                                    className="group-hover:scale-x-[1] group-focus:scale-x-[1] scale-x-[-1] w-52 md:w-64 h-60 md:h-72 scale-120 transition-transform duration-900 object-cover mx-auto"
                                     draggable="false"
                                     onContextMenu={(e) => e.preventDefault()} 
                                     />
