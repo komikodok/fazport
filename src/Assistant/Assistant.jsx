@@ -81,7 +81,7 @@ const Assistant = () => {
                 </form>
                 <div className="absolute bottom-0 w-full h-[40%] border-3 border-cyan-700 p-0.5 bg-gray-950 rounded-xl">
                     <div className="absolute flex -top-[22%] right-[2%] bg-gradient-to-r via-cyan-800 w-[30%] h-[22%]">
-                        <strong className="m-auto text-xl text-slate-200">Assistant</strong>
+                        <strong className="m-auto text-xl max-sm:text-sm text-slate-200">Assistant</strong>
                     </div>
                     <div className="flex w-full h-full">
                         <img 
@@ -91,7 +91,7 @@ const Assistant = () => {
                             onContextMenu={(e) => e.preventDefault()}
                             draggable="false" />
                         <div className="flex text-center p-4 w-full h-full bg-gradient-to-r from-transparent via-cyan-950 to-transparent rounded-r-xl">
-                            <p className="w-full h-full text-sky-100 font-bold break-words break-all overflow-y-scroll" style={{ scrollbarWidth: "none" }}>
+                            <p className="w-full h-full text-sky-100 max-sm:text-xs font-bold break-words break-all overflow-y-scroll" style={{ scrollbarWidth: "none" }}>
                                 {data.generation}
                             </p>
                         </div>
