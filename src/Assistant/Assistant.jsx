@@ -54,13 +54,15 @@ const Assistant = () => {
             .then((response) => setData(response?.data))
             .catch((error) => setData(error.response?.data));
     }
+
+    const sizeAssistantContainer = "md:w-[90%] lg:w-[70%] h-[80%] xl:h-[60%] max-sm:h-[50%]"
     
     return (
         <>
             <AssistantButton handleClick={handleClick} openAssistant={openAssistant} />
 
             <div className={`fixed inset-0 ${!openAssistant && "hidden"} w-full h-full opacity-60 bg-black`}></div>
-            <div className={`${openAssistant ? "translate-y-0" : "translate-y-full"} fixed bottom-0 right-1/2 translate-x-1/2 w-full md:w-[90%] lg:w-[70%] h-[80%] xl:h-[60%] max-sm:h-[50%] transition-all duration-75 bg-gradient-to-b from-transparent to-slate-950`}>
+            <div className={`${openAssistant ? "translate-y-0" : "translate-y-full"} fixed bottom-0 right-1/2 translate-x-1/2 w-full ${sizeAssistantContainer} transition-all duration-75 bg-gradient-to-b from-transparent to-slate-950`}>
                 <button type="button" onClick={clearMessageHistory} className="absolute right-0 cursor-pointer rounded-full p-2 hover:rotate-90 transition-transform">❌</button>
                 <form onSubmit={handleSubmit} className="absolute flex p-1 justify-end right-0 top-10 w-[60%] h-[40%]">
                     <button
