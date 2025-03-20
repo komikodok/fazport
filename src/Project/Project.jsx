@@ -24,7 +24,7 @@ const Project = () => {
             {openProjectDetail
                 ? (<ProjectDetail projectData={projectData} projectSlug={projectSlug} setProjectSlug={setProjectSlug}/>)
                 : (
-                    <div className="bg-gradient-to-t from-slate-950 to-slate-900 py-15 p-3 max-w-full grid grid-cols-1 gap-8">
+                    <div className="bg-gradient-to-t from-slate-950 to-slate-900 py-15 p-3 max-w-full grid grid-cols-1 gap-8 overflow-auto">
                         <div className="py-20">
                             <h1 className="m-7 mb-14 font-semibold text-white text-3xl">
                                 My <span className="text-blue-400">Project</span>
