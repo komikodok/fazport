@@ -24,11 +24,11 @@ const Project = () => {
             {openProjectDetail
                 ? (<ProjectDetail projectData={projectData} projectSlug={projectSlug} setProjectSlug={setProjectSlug}/>)
                 : (
-                    <div className="bg-gradient-to-t from-slate-950 to-slate-900 py-15 p-3 max-w-full grid grid-cols-1 gap-8 overflow-auto">
+                    <div className="bg-gradient-to-t from-slate-950 to-slate-900 py-15 p-3 max-w-full grid grid-cols-1 gap-8">
                         <div className="py-20">
                             <h1 className="m-7 mb-14 font-semibold text-white text-3xl">
                                 My <span className="text-blue-400">Project</span>
-                                <div className="w-[400px] h-[5px] bg-gray-800 bg-gradient-to-r from-slate-300 rounded-full"></div>
+                                <div className="w-[200px] md:w-[400px] h-[5px] bg-gray-800 bg-gradient-to-r from-slate-300 rounded-full"></div>
                             </h1>
                             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 justify-self-center">
                                 {projectData.map((data, index) => (
