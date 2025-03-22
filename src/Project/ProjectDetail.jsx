@@ -17,9 +17,9 @@ const ProjectDetail = ({projectData, projectSlug, setProjectSlug}) => {
     }, [projectSlug]);
 
     return (
-        <section className="bg-gradient-to-t from-slate-950 to-slate-900 py-15 lg:p-3 w-full h-full pt-24 pb-60 md:pb-64">
-            <div className="border-x-4 border-y-2 border-gray-950 bg-gradient-to-r from-gray-900 to-gray-950 rounded-xl max-sm:p-8 p-10 justify-self-center mx-10 shadow-2xl shadow-gray-950">
-                <h1 className="text-center text-slate-200 md:text-3xl text-2xl font-semibold -mx-5 mb-7">
+        <section className="bg-gradient-to-t from-slate-950 to-slate-900 py-20 w-full h-auto">
+            <div className="border-x-4 border-y-2 border-gray-950 bg-gradient-to-r from-gray-900 to-gray-950 rounded-xl max-sm:p-7 p-10 justify-self-center m-2 md:mx-10 shadow-2xl shadow-gray-950">
+                <h1 className="text-center text-slate-200 md:text-3xl text-xl font-semibold -mx-4 mb-7">
                     <span className="underline">{projectDetail.title}</span>
                 </h1>
                 <p className="text-justify text-slate-300 first-letter:text-8xl first-letter:float-left first-letter:mr-3 first-line:tracking-widest first-line:uppercase">{projectDetail.prefix}</p>
